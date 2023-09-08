@@ -2,7 +2,7 @@
 
 ![Banner](Banner.png)
 
-**Terra Station** is a web application to interact with [Terra Core](https://github.com/terra-money/core).
+**Terra Station** is a web application to interact with [Terra Core-v2](https://github.com/project-88388/core-v2).
 
 Terra Station allows users to:
 
