@@ -26,8 +26,8 @@ This project was bootstrapped with [Create React App](https://create-react-app.d
 Run Terra Station with the following commands:
 
 ```
-git clone https://github.com/terra-money/station.git
-cd station
+git clone https://github.com/project-88388/dev_frontend.git
+cd dev_frontend
 npm i
 npm run start
 ```
