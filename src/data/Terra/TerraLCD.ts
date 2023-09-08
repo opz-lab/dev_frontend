@@ -3,7 +3,7 @@ import axios, { AxiosError } from "axios"
 import { useNetwork } from "data/wallet"
 import { useNetworks } from "app/InitNetworks"
 import { queryKey, RefetchOptions } from "../query"
-import { terraLCDURL } from "../../config/constants"
+import { terraLCDURL } from "../../config/lcdurl"
 
 /* terra LCD map*/
 //

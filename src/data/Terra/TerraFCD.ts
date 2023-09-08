@@ -3,7 +3,7 @@ import axios, { AxiosError } from "axios"
 import { useNetwork } from "data/wallet"
 import { useNetworks } from "app/InitNetworks"
 import { queryKey, RefetchOptions } from "../query"
-import { terraFCDURL } from "../../config/constants"
+import { terraFCDURL } from "../../config/fcdurl"
 
 /* terra FCD map*/
 export const useTerraFCDURL = (mainnet?: true) => {

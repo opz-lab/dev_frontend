@@ -108,7 +108,7 @@ export const useNav = () => {
     },
   ]
 
-  const routes = [
+  const routes = useRoutes([
     { path: "/", element: <Dashboard /> },
 
     /* pages */
@@ -152,9 +152,9 @@ export const useNav = () => {
 
     /* 404 */
     { path: "*", element: <Navigate to="/" /> },
-  ]
+  ])
 
-  return { menu, element: useRoutes(routes) }
+  return { menu, element: routes }
 }
 
 /* helpers */

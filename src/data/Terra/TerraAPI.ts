@@ -10,7 +10,7 @@ import { useOracleParams } from "data/queries/oracle"
 import { useNetworks } from "app/InitNetworks"
 import { queryKey, RefetchOptions } from "../query"
 
-import { terraAPIURL } from "../../config/constants"
+import { terraAPIURL } from "../../config/apiurl"
 
 export enum Aggregate {
   PERIODIC = "periodic",

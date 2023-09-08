@@ -34,34 +34,36 @@ const App = () => {
   const { element: routes } = useNav()
 
   return (
-    <Layout>
-      <Sidebar>
-        <Nav />
-        <Aside />
-      </Sidebar>
+    <ErrorBoundary fallback={fallback}>
+      <Layout>
+        <Sidebar>
+          <Nav />
+          <Aside />
+        </Sidebar>
 
-      <Header>
-        <NetworkName />
+        <Header>
+          <NetworkName />
 
-        <Actions>
-          <DevTools />
-          <section>
-            <Refresh />
-            <Preferences />
-            <SelectTheme />
-          </section>
-          <ValidatorButton />
-          <ConnectWallet />
-        </Actions>
-        <LatestTx />
-      </Header>
+          <Actions>
+            <DevTools />
+            <section>
+              <Refresh />
+              <Preferences />
+              <SelectTheme />
+            </section>
+            <ValidatorButton />
+            <ConnectWallet />
+          </Actions>
+          <LatestTx />
+        </Header>
 
-      <Content>
-        <ErrorBoundary fallback={fallback}>
-          <InitBankBalance>{routes}</InitBankBalance>
-        </ErrorBoundary>
-      </Content>
-    </Layout>
+        <Content>
+          <ErrorBoundary fallback={fallback}>
+            <InitBankBalance>{routes}</InitBankBalance>
+          </ErrorBoundary>
+        </Content>
+      </Layout>
+    </ErrorBoundary>
   )
 }
 
